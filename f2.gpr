@@ -1,0 +1,22 @@
+project f2 is
+
+  for source_dirs use ("source");
+
+  for object_dir use "object";
+
+  for exec_dir use "binary";
+
+  -- enable more warnings: "-gnatwa"
+  -- optimization level 2: "-O2"
+  -- assertions enabled: "-gnata"
+  package Compiler is
+    for Default_Switches ("Ada") use ("-gnatwa", "-gnata");
+  end Compiler;
+
+  package Builder is
+    for Executable ("main.adb") use "f2";
+  end Builder;
+
+  for main use ("main.adb");
+
+end f2;
