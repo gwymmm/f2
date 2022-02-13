@@ -1,6 +1,6 @@
 with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 
-package Cmd_Args is
+package CMD_Args is
   
   type Execution_Options is record
     Flag_Help_Set: Boolean;
@@ -9,4 +9,4 @@ package Cmd_Args is
   
   procedure Read(Options: out Execution_Options);
     
-end Cmd_Args;
+end CMD_Args;

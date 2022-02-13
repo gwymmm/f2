@@ -1,6 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
-package body Cmd_Args is
+package body CMD_Args is
   
   type Command_Line_Arguments is record
     Current_Index: Positive;
@@ -20,4 +20,4 @@ package body Cmd_Args is
     Put_Line(To_String(Arguments.Buffer));
   end Read;
   
-end Cmd_Args;
+end CMD_Args;
