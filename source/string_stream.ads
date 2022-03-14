@@ -1,6 +1,6 @@
-with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
+with STD_String_Handling; use STD_String_Handling;
 
-package String_Parser is
+package String_Stream is
 
   type Source_String is private;
 
@@ -13,8 +13,8 @@ package String_Parser is
 private
 
   type Source_String is record
-    Source: Unbounded_String;
+    Source: STD_String;
     Current_Index: Natural;
   end record;
 
-end String_Parser;
+end String_Stream;

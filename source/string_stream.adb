@@ -1,4 +1,4 @@
-package body String_Parser is
+package body String_Stream is
 
   procedure Initialize(New_Source_String: out Source_String; From_This_String: in String) is
   begin
@@ -21,4 +21,4 @@ package body String_Parser is
     New_Character := Element(Source.Source, Source.Current_Index);
   end Next_Character;
 
-end String_Parser;
+end String_Stream;
