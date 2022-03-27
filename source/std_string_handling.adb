@@ -5,6 +5,16 @@ package body STD_String_Handling is
     Target := To_Unbounded_String(Source);
   end Set;
 
+  function To_STD_String(Source: in String) return STD_String is
+  begin
+    return To_Unbounded_String(Source);
+  end To_STD_String;
+
+  function Get_Length(S: in STD_String) return Natural is
+  begin
+    return Length(S);
+  end Get_Length;
+
   function Get(Source: in STD_String) return String is
   begin
     return To_String(Source);

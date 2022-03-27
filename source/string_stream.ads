@@ -13,7 +13,7 @@ package String_Stream is
 private
 
   type Source_String is record
-    Source: STD_String;
+    Text_Buffer: STD_String;
     Current_Index: Natural;
   end record;
 

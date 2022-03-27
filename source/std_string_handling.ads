@@ -6,6 +6,10 @@ package STD_String_Handling is
 
   procedure Set(Target: out STD_String; Source: in String);
 
+  function To_STD_String(Source: in String) return STD_String;
+
+  function Get_Length(S: in STD_String) return Natural;
+
   function Get(Source: in STD_String) return String;
 
   procedure Set_Character(Target: in out STD_String; Position: in Positive; Char: in Character);
